@@ -4,6 +4,7 @@ type Message struct {
 	ID      string `json:"id"`
 	Author  string `json:"author"`
 	Content string `json:"content"`
+	Date    string `json:"date"`
 }
 
 func (m *Message) IsEmpty() bool {

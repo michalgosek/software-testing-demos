@@ -14,9 +14,9 @@ const (
 )
 
 type Message struct {
-	ID      string `json:"id"`
-	Author  string `json:"author"`
-	Content string `json:"content"`
+	ID      string `json:"id" pact:"example=10"`
+	Author  string `json:"author" pact:"example=John Doe"`
+	Content string `json:"content" pact:"example=Example 1"`
 }
 
 type MessageClient struct {

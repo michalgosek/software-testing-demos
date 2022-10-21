@@ -38,10 +38,14 @@ func TestContract_MessageServiceShouldReturnMessageWithID10(t *testing.T) {
 		WillRespondWith(dsl.Response{
 			Status:  http.StatusOK,
 			Headers: dsl.MapMatcher{"Content-Type": dsl.String("application/json")},
-			Body:    dsl.Like(Message{}),
+			Body:    dsl.Match(Message{}),
 		})
 
-	var expectedMessage Message
+	expectedMessage := Message{
+		ID:      "10",
+		Author:  "John Doe",
+		Content: "Example 1",
+	}
 
 	// when:
 	err := pact.Verify(func() error {
