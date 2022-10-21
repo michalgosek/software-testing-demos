@@ -1,0 +1,48 @@
+{
+  "consumer": {
+    "name": "MESSAGE_SERVICE_CLIENT"
+  },
+  "provider": {
+    "name": "MESSAGE_SERVICE"
+  },
+  "interactions": [
+    {
+      "description": "GET request for message with ID 10",
+      "providerState": "Message with ID 10 is available",
+      "request": {
+        "method": "GET",
+        "path": "api/v1/messages/10",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "$.path": {
+            "match": "regex",
+            "regex": "api\\/v1\\/messages\\/[0-9]+"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "id": "",
+          "author": "",
+          "content": ""
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
