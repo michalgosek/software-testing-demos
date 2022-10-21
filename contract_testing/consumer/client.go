@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	MessageEndpoint  = "/api/v1/messages/%s"
+	MessageEndpoint  = "/messages/%s"
 	MessagesEndpoint = "/messages/"
 )
 
