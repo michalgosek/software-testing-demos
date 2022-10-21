@@ -1,1 +1,1 @@
-# software-testing-demos
+test software-testing-demos
