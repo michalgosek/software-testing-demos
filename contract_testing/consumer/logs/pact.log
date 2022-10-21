@@ -1,5 +1,5 @@
-I, [2022-10-21T10:29:19.070083 #5178]  INFO -- : Registered expected interaction GET api/v1/messages/10
-D, [2022-10-21T10:29:19.070258 #5178] DEBUG -- : {
+I, [2022-10-21T11:20:39.344641 #11450]  INFO -- : Registered expected interaction GET api/v1/messages/10
+D, [2022-10-21T11:20:39.344836 #11450] DEBUG -- : {
   "description": "GET request for message with ID 10",
   "providerState": "Message with ID 10 is available",
   "request": {
@@ -35,21 +35,21 @@ D, [2022-10-21T10:29:19.070258 #5178] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2022-10-21T10:29:24.076366 #5178]  INFO -- : Received request GET /api/v1/messages/10
-D, [2022-10-21T10:29:24.076625 #5178] DEBUG -- : {
+I, [2022-10-21T11:20:44.350120 #11450]  INFO -- : Received request GET /api/v1/messages/10
+D, [2022-10-21T11:20:44.350440 #11450] DEBUG -- : {
   "path": "/api/v1/messages/10",
   "query": "",
   "method": "get",
   "headers": {
     "Content-Type": "application/json",
-    "Host": "localhost:52146",
+    "Host": "localhost:52818",
     "User-Agent": "Go-http-client/1.1",
     "Accept-Encoding": "gzip",
     "Version": "HTTP/1.1"
   }
 }
-I, [2022-10-21T10:29:24.079274 #5178]  INFO -- : Found matching response for GET api/v1/messages/10
-D, [2022-10-21T10:29:24.079406 #5178] DEBUG -- : {
+I, [2022-10-21T11:20:44.352555 #11450]  INFO -- : Found matching response for GET api/v1/messages/10
+D, [2022-10-21T11:20:44.352762 #11450] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json"
@@ -63,5 +63,5 @@ D, [2022-10-21T10:29:24.079406 #5178] DEBUG -- : {
     }
   }
 }
-I, [2022-10-21T10:29:24.080900 #5178]  INFO -- : Verifying - interactions matched
-I, [2022-10-21T10:29:24.081470 #5178]  INFO -- : Cleared interactions
+I, [2022-10-21T11:20:44.355011 #11450]  INFO -- : Verifying - interactions matched
+I, [2022-10-21T11:20:44.355949 #11450]  INFO -- : Cleared interactions
