@@ -1,0 +1,12 @@
+# Logfile created on 2022-10-21 12:45:39 +0200 by logger.rb/56815
+I, [2022-10-21T12:45:39.753338 #14696]  INFO -- : Running example 'Verifying a pact between MESSAGE_SERVICE_CLIENT and MESSAGE_SERVICE Given Message with ID 10 is available GET request for message with ID 10 with GET api/v1/messages/10 returns a response which has status code 200'
+I, [2022-10-21T12:45:39.753842 #14696]  INFO -- : Sending GET request to path: "api/v1/messages/10" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type", "X_PACT_PROVIDER_STATES"=>[{"name"=>"Message with ID 10 is available"}]}, see debug logs for body
+D, [2022-10-21T12:45:39.753870 #14696] DEBUG -- : body :
+I, [2022-10-21T12:45:39.790568 #14696]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"83", "Content-Type"=>"application/json", "Date"=>"Fri, 21 Oct 2022 10:45:39 GMT"}, see debug logs for body
+D, [2022-10-21T12:45:39.790634 #14696] DEBUG -- : body: {
+	"id": "10",
+	"author": "John Doe",
+	"content": "Example content",
+	"date": ""
+}
+

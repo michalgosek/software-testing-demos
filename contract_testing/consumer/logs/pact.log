@@ -1,0 +1,79 @@
+I, [2022-10-21T12:43:25.929653 #14567]  INFO -- : Registered expected interaction GET api/v1/messages/10
+D, [2022-10-21T12:43:25.929856 #14567] DEBUG -- : {
+  "description": "GET request for message with ID 10",
+  "providerState": "Message with ID 10 is available",
+  "request": {
+    "method": "GET",
+    "path": {
+      "json_class": "Pact::Term",
+      "data": {
+        "generate": "api/v1/messages/10",
+        "matcher": {
+          "json_class": "Regexp",
+          "o": 0,
+          "s": "api/v1/messages/[0-9]+"
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "author": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "John Doe"
+      },
+      "content": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Example 1"
+      },
+      "id": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "10"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2022-10-21T12:43:30.938630 #14567]  INFO -- : Received request GET /api/v1/messages/10
+D, [2022-10-21T12:43:30.938842 #14567] DEBUG -- : {
+  "path": "/api/v1/messages/10",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Content-Type": "application/json",
+    "Host": "localhost:54020",
+    "User-Agent": "Go-http-client/1.1",
+    "Accept-Encoding": "gzip",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2022-10-21T12:43:30.941152 #14567]  INFO -- : Found matching response for GET api/v1/messages/10
+D, [2022-10-21T12:43:30.941316 #14567] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "author": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "John Doe"
+    },
+    "content": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "Example 1"
+    },
+    "id": {
+      "json_class": "Pact::SomethingLike",
+      "contents": "10"
+    }
+  }
+}
+I, [2022-10-21T12:43:30.942662 #14567]  INFO -- : Verifying - interactions matched
+I, [2022-10-21T12:43:30.943253 #14567]  INFO -- : Cleared interactions

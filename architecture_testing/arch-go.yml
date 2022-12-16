@@ -1,0 +1,20 @@
+version: 1
+threshold:
+  compliance: 100
+  coverage: 100
+dependenciesRules:
+  - package: "**.application.**"
+    shouldNotDependsOn:
+      internal:
+        - "adapters.**"
+  - package: "**.adapters.**"
+    shouldOnlyDependsOn:
+      internal:
+        - "application.**"
+
+functionsRules:
+  - package: "adapters.**"
+    maxParameters: 2
+    maxReturnValues: 2
+    maxPublicFunctionPerFile: 2
+    maxLines: 50
