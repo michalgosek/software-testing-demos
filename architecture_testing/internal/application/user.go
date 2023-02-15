@@ -1,5 +1,6 @@
 package application
 
+// Example comment.
 type User struct {
 	uuid    string
 	name    string
